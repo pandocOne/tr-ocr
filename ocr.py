@@ -39,8 +39,6 @@ def ocr_onepage(img_path):
     color_pil = img_pil.convert("RGB")
     gray_pil = img_pil.convert("L")
 
-    img_draw = ImageDraw.Draw(color_pil)
-
     t = time.time()
     n = 1
     for _ in range(n):
