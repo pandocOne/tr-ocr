@@ -9,3 +9,5 @@ for file in $files; do
   echo $file>>error.log
   python /usr/bin/ocr.py $file $fn.txt $1 2>>error.log
 done
+
+chown $uid.$uid $fn.txt error.log
