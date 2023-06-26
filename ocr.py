@@ -43,7 +43,7 @@ def ocr_onepage(img_path):
     n = 1
     for _ in range(n):
         tr.detect(gray_pil, flag=tr.FLAG_RECT)
-    print("time", (time.time() - t) / n)
+    print(sys.argv[1], "time", (time.time() - t) / n)
 
     results = tr.run(gray_pil, flag=tr.FLAG_ROTATED_RECT)
 
